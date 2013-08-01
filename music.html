@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <title>music.schoewilliam · the music I am listening to, right now.</title>
+    <meta content='initial-scale=1.0' name='viewport'>
+
+  </head>
+  
+  <body>
+
+<section class="index home">
+
+
+	<figure class="emb">
+			<h1>
+				<div><img src="./images/photosmall.jpg" id="cassiopeia"><span style="opacity:0.7;">♪</span></div>
+				<div><span style="display:block;">music.</span><span style="line-height:0.6;opacity:0.5;display:block;font-size:60%;">schoewilliam</span></div>
+			</h1>
+		
+		<div>
+			<audio id="stream" preload="none">
+				<source type="audio/ogg" src="http://music.schoewilliam.fr:8000"></source>
+			</audio>
+			<div id="controls">
+			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume-=0.2"><i class="icon-volume-down"></i></a>
+			  <a href="#" class="but" id="playbut"><i class="icon-play"></i></a>
+			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume+=0.2"><i class="icon-volume-up"></i></a>
+			</div>
+		</div>
+
+		<div style="color: rgb(255, 255, 255); max-width: 300px; font-size: 80%;">
+			<p><i class="icon-info-sign"></i> This is streaming the music I'm listening to right now. Just sharing.</p>
+		</div>
+	</figure>
+
+
+<script>
+var player = document.getElementById('stream'),
+    ctrl = document.getElementById('playbut');
+
+ctrl.onclick = function () {
+
+    // Update the Button
+    var pause = ctrl.innerHTML === '<i class="icon-pause"></i>';
+    ctrl.innerHTML = pause ? '<i class="icon-play"></i>' : '<i class="icon-pause"></i>';
+
+    // Update the Audio
+    var method = pause ? 'pause' : 'play';
+    player[method]();
+
+    // Prevent Default Action
+    return false;
+};
+</script>
+</section>
