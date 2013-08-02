@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>music.schoewilliam · the music I am listening to, right now.</title>
     <meta content='initial-scale=1.0' name='viewport'>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
   </head>
   
   <body>
@@ -39,7 +39,7 @@
 			</div>
 
 			<div style="color:#fff; max-width:300px;">
-			  <i class="icon-music"></i> <span id="current-track"><?php include('nowplaying.php'); echo $current; ?></span>
+			  <i class="icon-music"></i> <span id="current-track"></span>
 			</div>
 		</div>
 	</figure>
