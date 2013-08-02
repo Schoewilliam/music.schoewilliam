@@ -8,6 +8,8 @@
     <title>music.schoewilliam · the music I am listening to, right now.</title>
     <meta content='initial-scale=1.0' name='viewport'>
     <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+
+    <link rel="icon" type="image/png" href="/images/fav.png">
   </head>
   
   <body>
