@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>music.schoewilliam · the music I am listening to, right now.</title>
     <meta content='initial-scale=1.0' name='viewport'>
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   </head>
   
   <body>
@@ -20,26 +20,46 @@
 				<div><img src="./images/photosmall.jpg" id="cassiopeia"><span style="opacity:0.7;">♪</span></div>
 				<div><span style="display:block;">music.</span><span style="line-height:0.6;opacity:0.5;display:block;font-size:60%;">schoewilliam</span></div>
 			</h1>
-		
+
+
+		<div style="color:rgb(255, 255, 255); max-width:300px; font-size:80%;">
+			<p><i class="icon-info-sign"></i> This is streaming the music I'm listening to right now. Just sharing.</p>
+		</div>	
+
+
 		<div>
 			<audio id="stream" preload="none">
-				<source type="audio/ogg" src="http://music.schoewilliam.fr:8000"></source>
-				<p><i class="icon-info-sign"></i> It looks like your browser cannot play this stream. You can instead play <a href="http://music.schoewilliam.fr:8000">http://music.schoewilliam.fr:8000</a> in a media player (such as VLC or MPlayer).</p>
+				<source type="audio/ogg" src="http://music.schoewilliam.fr:8000/mpd.ogg"></source>
+				<p><i class="icon-info-sign"></i> It looks like your browser cannot play this stream. You can instead play <a href="http://music.schoewilliam.fr:8000/mpd.ogg">http://music.schoewilliam.fr:8000/mpd.ogg</a> in a media player (such as VLC or MPlayer).</p>
 			</audio>
 			<div id="controls">
 			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume-=0.2"><i class="icon-volume-down"></i></a>
 			  <a href="#" class="but" id="playbut"><i class="icon-play"></i></a>
 			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume+=0.2"><i class="icon-volume-up"></i></a>
 			</div>
-		</div>
 
-		<div style="color: rgb(255, 255, 255); max-width: 300px; font-size: 80%;">
-			<p><i class="icon-info-sign"></i> This is streaming the music I'm listening to right now. Just sharing.</p>
+			<div style="color:#fff; max-width:300px;">
+			  <i class="icon-music"></i> <span id="current-track"><?php include('nowplaying.php'); echo $current; ?></span>
+			</div>
 		</div>
 	</figure>
 
 
-<script>
+<!-- calls nowplaying.php which grabs the metadats of the nowplaying track -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#current-track").load("nowplaying.php");
+});
+
+$(document).ready(function() {
+    setInterval(function(){
+           $("#current-track").load("nowplaying.php");
+    }, 10 * 1000);
+});
+</script>
+
+<!-- sets up the player buttons -->
+<script type="text/javascript">
 var player = document.getElementById('stream'),
     ctrl = document.getElementById('playbut');
 
