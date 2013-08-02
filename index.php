@@ -25,7 +25,7 @@
 
 
 		<div style="color:rgb(255, 255, 255); max-width:300px; font-size:80%;">
-			<p><i class="icon-info-sign"></i> This is streaming the music I'm listening to right now. Just sharing.</p>
+			<p><i class="icon-info-sign"></i> <em>This is streaming the music I'm listening to right now. Just sharing.</em></p>
 		</div>	
 
 
@@ -56,7 +56,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     setInterval(function(){
            $("#current-track").load("nowplaying.php");
-    }, 10 * 1000);
+    }, 10000);
 });
 </script>
 
