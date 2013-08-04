@@ -65,11 +65,12 @@ $x = explode(" - ",$temp_array[8]);
 	$radio_info['now_playing']['artist'] = $x[0];
 	$radio_info['now_playing']['track'] = $x[1];
 
+$status = '';
 $current = ''; 
 $current = ($radio_info['now_playing']['artist'] . ' · ' . $radio_info['now_playing']['track']);
 
 if ( $current == " · " ) {
-	print "<i class='icon-off'></i> <em>The stream is now Off Air</em> <style>#controls{opacity:0.25;margin-top:-60px;</style>";
+	print "<i class='icon-off'></i> <em>The stream is now Off Air</em> <style>#controls{visibility:hidden;margin-top:-70px;</style>";
 } else {
 	print ('<i class="icon-music"></i> ' . $current);
 }
