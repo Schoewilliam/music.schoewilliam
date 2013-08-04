@@ -36,7 +36,7 @@
 			  <span id="current-track"><?php include('nowplaying.php'); ?></span>
 			</div>
 
-			<div id="controls" <?php if ( $status == 'off') : ?>style="opacity:0.25;margin-top:-60px;"<?php endif; ?>>
+			<div id="controls">
 			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume-=0.2"><i class="icon-volume-down"></i></a>
 			  <a href="#" class="but" id="playbut"><i class="icon-play"></i></a>
 			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume+=0.2"><i class="icon-volume-up"></i></a>

@@ -70,8 +70,7 @@ $current = '';
 $current = ($radio_info['now_playing']['artist'] . ' · ' . $radio_info['now_playing']['track']);
 
 if ( $current == " · " ) {
-	$status = 'off';
-	print "<i class='icon-off'></i> <em>The stream is now Off Air</em>";
+	print "<i class='icon-off'></i> <em>The stream is now Off Air</em> <style>#controls{opacity:0.25;margin-top:-60px;</style>";
 } else {
 	print ('<i class="icon-music"></i> ' . $current);
 }
