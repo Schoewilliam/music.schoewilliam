@@ -19,7 +19,10 @@ h1, h2, h3 {
     font-family: "Feura Sans", Cantarell, sans-serif;
     font-weight: normal;
 }
-
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 40%;
+}
 section.index {
     margin: 0 auto;
     text-align: center;

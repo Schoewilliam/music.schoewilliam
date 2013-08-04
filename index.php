@@ -42,6 +42,7 @@
 			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume+=0.2"><i class="icon-volume-up"></i></a>
 			</div>
 
+			<hr>
 
 			<div style="color:rgb(255, 255, 255); max-width:300px; font-size:80%;">
 				<p><i class="icon-info-sign"></i> <em>This is streaming the music I'm listening to right now. Just sharing.</em></p>
