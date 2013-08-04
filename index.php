@@ -52,10 +52,6 @@
 
 <!-- calls nowplaying.php which grabs the metadats of the nowplaying track -->
 <script type="text/javascript">
-//$(document).ready(function() {
-//	$("#current-track").load("nowplaying.php");
-//});
-
 $(document).ready(function() {
     setInterval(function(){
            $("#current-track").load("nowplaying.php");
