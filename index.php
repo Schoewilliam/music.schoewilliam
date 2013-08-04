@@ -24,9 +24,6 @@
 			</h1>
 
 
-		<div style="color:rgb(255, 255, 255); max-width:300px; font-size:80%;">
-			<p><i class="icon-info-sign"></i> <em>This is streaming the music I'm listening to right now. Just sharing.</em></p>
-		</div>	
 
 
 		<div>
@@ -34,24 +31,30 @@
 				<source type="audio/ogg" src="http://music.schoewilliam.fr:8000/mpd.ogg"></source>
 				<p><i class="icon-info-sign"></i> It looks like your browser cannot play this stream. You can instead play <a href="http://music.schoewilliam.fr:8000/mpd.ogg">http://music.schoewilliam.fr:8000/mpd.ogg</a> in a media player (such as VLC or MPlayer).</p>
 			</audio>
-			<div id="controls">
+
+			<div style="color:#fff; max-width:300px; margin: 0 0 20px;">
+			  <span id="current-track"><?php include('nowplaying.php'); ?></span>
+			</div>
+
+			<div id="controls" <?php if ( $status == 'off') : ?>style="opacity:0.25;margin-top:-60px;"<?php endif; ?>>
 			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume-=0.2"><i class="icon-volume-down"></i></a>
 			  <a href="#" class="but" id="playbut"><i class="icon-play"></i></a>
 			  <a href="#" class="but vol" onclick="document.getElementById('stream').volume+=0.2"><i class="icon-volume-up"></i></a>
 			</div>
 
-			<div style="color:#fff; max-width:300px;">
-			  <i class="icon-music"></i> <span id="current-track"></span>
-			</div>
+
+			<div style="color:rgb(255, 255, 255); max-width:300px; font-size:80%;">
+				<p><i class="icon-info-sign"></i> <em>This is streaming the music I'm listening to right now. Just sharing.</em></p>
+			</div>	
 		</div>
 	</figure>
 
 
 <!-- calls nowplaying.php which grabs the metadats of the nowplaying track -->
 <script type="text/javascript">
-$(document).ready(function() {
-	$("#current-track").load("nowplaying.php");
-});
+//$(document).ready(function() {
+//	$("#current-track").load("nowplaying.php");
+//});
 
 $(document).ready(function() {
     setInterval(function(){
