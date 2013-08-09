@@ -1,10 +1,11 @@
 {
   "name": "music.schh",
-  "description": "music.schoewilliam - streaming the music I'm listening to right now.",
+  "description": "This is streaming the music I'm listening to right now. Just sharing.",
   "launch_path": "/",
+  "version": "0.1",
   "icons": {
-    "128": "/images/icon-128.png",
-    "60": "/images/icon-60.png"
+    "128": "/images/128.png",
+    "60": "/images/60.png"
   },
   "developer": {
     "name": "William Dorffer",
