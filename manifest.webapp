@@ -3,14 +3,12 @@
   "description": "music.schoewilliam - streaming the music I'm listening to right now.",
   "launch_path": "/",
   "icons": {
-    "128": "/images/icon-128.png"
+    "128": "/images/icon-128.png",
+    "60": "/images/icon-60.png"
   },
   "developer": {
     "name": "William Dorffer",
     "url": "http://schoewilliam.fr"
-  },
-  "chrome": {
-    "navigation": true
   },
   "default_locale": "en"
 }
