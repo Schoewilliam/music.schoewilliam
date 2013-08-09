@@ -34,8 +34,7 @@
 
 			<div style="color:#fff; max-width:300px; margin: 0 auto 20px; display: inline-block; max-width: 800px;">
 			  <a id="playbut" class="but" href="#"><i class="icon-play"></i></a>
-			  <div style="display:inline-block; vertical-align: middle; text-align:left; margin: 0 15px 15px;">
-				<small>now playing:</small><br>
+			  <div style="display:inline-block; vertical-align: middle; text-align:left; margin: 0 7px 15px;">
 			  	<span id="current-track"><?php include('nowplaying.php'); ?></span>
 			  </div>
 			</div>
@@ -44,7 +43,7 @@
 
 			<div style="color:rgb(255, 255, 255); max-width:300px; font-size:80%; margin: 0 auto;">
 				<p><i class="icon-info-sign"></i> <em>This is streaming the music I'm listening to right now. Just sharing.</em></p>
-				<p style="color:rgba(255, 255, 255, 0.5)">William Dorffer. <a href="http://schoewilliam.fr/2013/08/02/music-schoewilliam-fr-r%C3%A9sultat-dune-heure-d-ennui.htm" style="color:#fff"> learn more</a>.</p>
+				<p style="color:rgba(255, 255, 255, 0.5)">William Dorffer. <a href="http://schoewilliam.fr/2013/08/02/music-schoewilliam-fr-r%C3%A9sultat-dune-heure-d-ennui.html" style="color:#fff"> learn more</a>.</p>
 			</div>	
 		</div>
 	</figure>
