@@ -70,9 +70,9 @@ $current = '';
 $current = ($radio_info['now_playing']['artist'] . ' · ' . $radio_info['now_playing']['track']);
 
 if ( $current == " · " ) {
-	print "<i class='icon-off'></i> <em>Off Air for now…</em> <style>#controls{visibility:hidden;margin-top:-70px;</style>";
+	print "<p style='text-align:center;margin:0;opacity:0.3'><i class='icon-off'></i> Off Air<br>Come back later :).</p> <style>#playbut{display:none}</style>";
 } else {
-	print ('<i class="icon-music"></i> ' . $current);
+	print ('<small>now playing:</small><br><i class="icon-music"></i> ' . $current);
 }
 
 ?>
