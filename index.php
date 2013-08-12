@@ -43,7 +43,7 @@
 
 			<div style="color:rgb(255, 255, 255); max-width:300px; font-size:80%; margin: 0 auto;">
 				<p><i class="icon-info-sign"></i> <em>This is streaming the music I'm listening to right now. Just sharing.</em></p>
-				<p style="color:rgba(255, 255, 255, 0.5)">William Dorffer. <a href="http://schoewilliam.fr/2013/08/02/music-schoewilliam-fr-r%C3%A9sultat-dune-heure-d-ennui.html" style="color:#fff"> learn more</a>.</p>
+				<p style="color:rgba(255, 255, 255, 0.5)">William Dorffer. <a href="http://schoewilliam.fr/2013/08/02/music-schoewilliam-fr-r%C3%A9sultat-dune-heure-d-ennui.html" style="color:#fff" target="_blank">learn more</a>.</p>
 			</div>	
 		</div>
 	</figure>
