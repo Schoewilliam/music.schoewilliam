@@ -27,7 +27,7 @@
 
 
 		<div>
-			<audio id="stream" preload="none">
+			<audio mozaudiochannel="content" id="stream" preload="none">
 				<source type="audio/ogg" src="http://music.schoewilliam.fr:8000/mpd.ogg"></source>
 				<p><i class="icon-info-sign"></i> It looks like your browser cannot play this stream. You can instead play <a href="http://music.schoewilliam.fr:8000/mpd.ogg">http://music.schoewilliam.fr:8000/mpd.ogg</a> in a media player (such as VLC or MPlayer).</p>
 			</audio>

@@ -11,5 +11,10 @@
     "name": "William Dorffer",
     "url": "http://schoewilliam.fr"
   },
+  "permissions": {
+    "audio-channel-content": {
+	"description":  "Audio channel to play music stream"
+     }
+  },
   "default_locale": "en"
 }
