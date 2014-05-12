@@ -1,0 +1,20 @@
+{
+  "name": "Schmusic",
+  "description": "This is streaming the music I'm listening to right now. Just sharing.",
+  "launch_path": "/",
+  "version": "0.5",
+  "icons": {
+    "128": "/images/128.png",
+    "60": "/images/60.png"
+  },
+  "developer": {
+    "name": "William Dorffer",
+    "url": "http://schoewilliam.fr"
+  },
+  "permissions": {
+    "audio-channel-content": {
+	"description":  "Allows music to play in the background"
+     }
+  },
+  "default_locale": "en"
+}

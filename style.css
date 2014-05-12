@@ -19,7 +19,10 @@ h1, h2, h3 {
     font-family: "Feura Sans", Cantarell, sans-serif;
     font-weight: normal;
 }
-
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 40%;
+}
 section.index {
     margin: 0 auto;
     text-align: center;
@@ -50,12 +53,12 @@ section.index.post figure h1 {
     display: inline-block;
 }
 #cassiopeia {
-    margin: 0 0 0 20px;
+    margin: 0;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border: 0;
     vertical-align: middle;
-    width: 60px;
+    width: 50px;
     transition: all .3s;
     -webkit-transition: all .3s;
 }
@@ -73,6 +76,7 @@ section.index figure h1 small {
 
 section.index figure.emb {
     padding: 0;
+    margin: 0 20px;
     display: inline-block;
     transition: all 1.5s;
     -webkit-transition: all 1.5s;
@@ -121,22 +125,16 @@ section.index nav a:hover {
 #playbut {
 	background-color: rgba(255, 255, 255, 0.2);
 	display: inline-block;
-	line-height: 55px;
-	font-size: 170%;
+	vertical-align: middle;
+	line-height: 45px;
+	font-size: 150%;
 	color: #fff;
-	width: 55px;
-	height: 55px;
+	width: 45px;
+	height: 45px;
 	padding: 0;
-	margin: 0 0 15px;
+	margin: 0 7px 15px;
 	border-radius: 2px;
 	box-shadow: 0 2px rgba(0, 0, 0, 0.2);
-}
-@media screen and (min-width:750px) {
-	#playbut {
-		width: 70px;
-		height: 70px;
-		line-height: 70px;
-	}
 }
 #playbut:hover {
 	background-color: rgba(255, 255, 255, 0.35);
