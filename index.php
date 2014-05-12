@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
 
     <meta charset="UTF-8">
-    <title>Schmusic · the music I am listening to, right now.</title>
+    <title>Schmusic…</title>
     <meta content='initial-scale=1.0' name='viewport'>
     <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
 
