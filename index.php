@@ -26,16 +26,16 @@
 
 
 		<div>
-			<audio mozaudiochannel="content" id="stream" preload="none">
+
+			<div style="color:#fff; max-width:300px; margin: 0 auto 20px; display: inline-block; max-width: 800px;">
+			  <div style="vertical-align: middle; text-align:left; margin: 0 7px 15px;">
+			  	<span id="current-track"><?php include('nowplaying.php'); ?></span>
+			  </div>
+
+			<audio mozaudiochannel="content" id="stream" preload="none" controls>
 				<source type="audio/ogg" src="http://music.schoewilliam.fr:8000/mpd.ogg"></source>
 				<p><i class="icon-info-sign"></i> It looks like your browser cannot play this stream. You can instead play <a href="http://music.schoewilliam.fr:8000/mpd.ogg">http://music.schoewilliam.fr:8000/mpd.ogg</a> in a media player (such as VLC or MPlayer).</p>
 			</audio>
-
-			<div style="color:#fff; max-width:300px; margin: 0 auto 20px; display: inline-block; max-width: 800px;">
-			  <a id="playbut" class="but" href="#"><i class="icon-play"></i></a>
-			  <div style="display:inline-block; vertical-align: middle; text-align:left; margin: 0 7px 15px;">
-			  	<span id="current-track"><?php include('nowplaying.php'); ?></span>
-			  </div>
 			</div>
 
 			<hr>
