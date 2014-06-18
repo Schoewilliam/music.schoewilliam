@@ -11,7 +11,13 @@ foreach ($json_a as $person_name => $person_a) {
     echo $person_a['status'];
 }
 
-$current = ($art . ' · ' . $title);
+if ( $art == null ) {
+	$current = 'Off air… Come back later :)';
+	print ('&#9726; <em style="opacity:.7">' . $current . '</em>');
+	print ('<style>.emb audio {display:none}</style>');
+} else {
+	$current = ($art . ' . ' . $title);
+	print ('<small>now playing:</small><br>&#9654; ' . $current);
+}
 
-print ('<small>now playing:</small><br><i class="icon-music"></i> ' . $current);
 ?>
